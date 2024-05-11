@@ -37,15 +37,13 @@ const Home = () => {
             </svg>
           </div>
           <ul className="menu menu-sm  dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-         {links}
+            {links}
           </ul>
         </div>
         <NavLink className="btn btn-ghost text-xl">CareerHub</NavLink>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-        {links}
-        </ul>
+        <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
         <NavLink className="btn">Button</NavLink>
