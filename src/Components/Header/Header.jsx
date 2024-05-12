@@ -56,7 +56,7 @@ const Header = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end grid ">
-          <Link className=" max-sm:text-base max-sm:p-2 max-md:text-2xl max-md:p-4 md:text-2xl p-4 rounded-xl text-white  bg-gradient-to-r from-indigo-500 via-blue-500 from-15% via-sky-500 via-35% to-emerald-500 to-85%">
+          <Link className=" max-sm:text-base max-sm:p-2 max-md:text-2xl max-md:p-4 md:text-2xl p-4 rounded-xl text-white bg-gradient-to-r from-[#818eff] from-10% via-[#8a82ff] via-30% to-[#9576ff] to-85%">
             Apply Now
           </Link>
         </div>
