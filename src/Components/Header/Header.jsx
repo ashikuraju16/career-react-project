@@ -24,14 +24,16 @@ const Header = () => {
   );
 
   return (
-    <div className=" navbar bg-white max-sm:p-4">
-      <div className="navbar-start">
+    <div className=" navbar bg max-sm:p-4 ">
+      <div className="md:w-[80%] max-sm:w-full  mx-auto">
+
+      <div className="navbar-start max-sm:flex ">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden max-sm:mr-6">
             {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-6 w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -48,16 +50,17 @@ const Header = () => {
             {links}
           </ul>
         </div>
-        <h1 className=" text-3xl md:text-5xl  text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-indigo-500 from-15% via-sky-500 via-35% to-emerald-500 to-85%">
+        <h1 className=" text-3xl md:text-5xl max-sm:place-content-center  text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-indigo-500 from-15% via-sky-500 via-35% to-emerald-500 to-85%">
           CareerHub
         </h1>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
-      <div className="navbar-end">
-    <Link className="btn">Apply Now</Link>
+      <div className="navbar-end grid ">
+    <Link className="btn md:text-2xl text-white  text-[8px] md:p-2 bg-gradient-to-r from-indigo-500 via-blue-500 from-15% via-sky-500 via-35% to-emerald-500 to-85%">Apply Now</Link>
   </div>
+      </div>
     </div>
   );
 };
