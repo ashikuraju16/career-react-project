@@ -5,7 +5,7 @@ import Header from "../Header/Header";
 
 const Layout = () => {
   return <div >
-  <div className="">
+  <div className="bg-white">
     <Header />
     <Outlet />
   </div>

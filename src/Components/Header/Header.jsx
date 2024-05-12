@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 const Header = () => {
   const links = (
     <>
-      <div className="max-sm:flex max-sm:flex-col md:flex-col md:space-x-24  md:text-white max-sm:text-white max-sm:gap-4  text-black text-xl ">
+      <div className="max-sm:flex max-sm:flex-col  text-black text-2xl font-extrabold md:flex-col md:space-x-24  max-sm:text-white max-sm:gap-4  ">
         <NavLink
           to={"home"}
           className={({ isActive, isPending }) =>
