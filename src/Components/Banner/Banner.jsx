@@ -10,7 +10,7 @@ const Banner = () => {
         </h1>
         <p className="my-4 md:text-2xl sm:text-xl md:my-6 w-full p-2 text-black">
           Explore thousands of job opportunities with all the information you
-          need. It's your future. Come find it. Manage all your job applications
+          need. It&apos;s your future. Come find it. Manage all your job applications
           from start to finish.
         </p>
         {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
