@@ -4,12 +4,12 @@ const JobCategory = () => {
     return (
         <div className="mt-28">
            <div className="text-center font-extrabold " >
-           <h1 className="text-6xl  text-black">
+           <h1 className="text-6xl max-sm:text-5xl text-black">
             Job Category List
             </h1>
-            <p className="text-2xl text-[#757575] mt-4">Explore thousands of job opportunities with all the information you need. Its your future</p>
+            <p className="text-2xl max-sm:text-xl p-3 text-[#757575] mt-4">Explore thousands of job opportunities with all the information you need. Its your future</p>
            </div>
-           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mt-8 w-[90%] mx-auto md:w-[70%] ">
+           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-12 max-sm:p-6 rounded-xl mt-8 xl:w-[80%] mx-auto md:w-[90%] ">
            {/* Account & Finance */}
             <div className="bg-[#f9f9ff] p-8 ">
                 <img className="bg-[#edeeff] p-4 rounded-lg" src="/src/assets/icons/accounts.png" alt="" />
