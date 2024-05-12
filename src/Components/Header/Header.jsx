@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 const Header = () => {
   const links = (
     <>
-      <div className="max-sm:flex max-sm:flex-col md:flex-col  space-x-20 md:text-white max-sm:text-white max-sm:gap-4  text-black text-xl ">
+      <div className="max-sm:flex max-sm:flex-col md:flex-col md:space-x-24  md:text-white max-sm:text-white max-sm:gap-4  text-black text-xl ">
         <NavLink
           to={"home"}
           className={({ isActive, isPending }) =>
@@ -16,7 +16,6 @@ const Header = () => {
         >
           Home
         </NavLink>
-        <NavLink>Statistics</NavLink>
         <NavLink>Applied Jobs</NavLink>
         <NavLink>Blogs</NavLink>
       </div>
@@ -24,19 +23,15 @@ const Header = () => {
   );
 
   return (
-    <div className=" navbar   md:p-2  xl:w-[90%]  mx-auto ">
+    <div className=" navbar md:p-2  xl:w-[85%]  mx-auto ">
       <div className="  w-full flex justify-between md:p-2 ">
-        <div className="navbar max-sm:flex md:flex w-[90%] justify-between  ">
+        <div className="navbar max-sm:flex md:flex w-[90%] justify-between ">
           <div className="dropdown  lg:hidden">
-            <div
-              tabIndex={0}
-              role="button"
-              className=""
-            >
+            <div tabIndex={0} role="button" className="">
               {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 md:w-10 md:h-10 md:my-3 md:mr-8"
+                className="h-6 w-6 md:w-10 md:h-10 "
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -53,7 +48,7 @@ const Header = () => {
               {links}
             </ul>
           </div>
-          <h1 className="max-sm:mt-2 max-sm:text-4xl max-md:text-6xl md:text-7xl text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-indigo-500 from-15% via-sky-500 via-35% to-emerald-500 to-85%">
+          <h1 className="max-sm:mt-2 max-sm:text-4xl max-md:text-6xl  md:text-7xl text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-indigo-500 from-15% via-sky-500 via-35% to-emerald-500 to-85%">
             CareerHub
           </h1>
         </div>
