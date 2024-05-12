@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 const Header = () => {
   const links = (
     <>
-      <div className="flex max-sm:flex-col max-sm:text-white max-sm:gap-4 max-sm:p-4 gap-12 text-black text-xl md:my-12">
+      <div className="max-sm:flex  max-sm:flex-col md:flex-col space-x-6 md:text-white max-sm:text-white max-sm:gap-4  text-black text-xl ">
         <NavLink
           to={"home"}
           className={({ isActive, isPending }) =>
@@ -24,42 +24,47 @@ const Header = () => {
   );
 
   return (
-    <div className=" navbar bg max-sm:p-4 ">
-      <div className="md:w-[80%] max-sm:w-full  mx-auto">
-
-      <div className="navbar-start max-sm:flex ">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden max-sm:mr-6">
-            {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+    <div className=" navbar  max-sm:p-4 max-start md:p-8  xl:w-[85%]  mx-auto ">
+      <div className="  w-full flex justify-between md:p-2">
+        <div className="navbar- max-sm:flex md:flex w-[80%]">
+          <div className="dropdown">
+            <div
+              tabIndex={0}
+              role="button"
+              className=" lg:hidden"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
+              {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 md:w-10 md:h-10 md:my-3 md:mr-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul className="menu menu-sm  dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              {links}
+            </ul>
           </div>
-          <ul className="menu menu-sm  dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            {links}
-          </ul>
+          <h1 className=" text-3xl ml-4 md:text-7xl text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-indigo-500 from-15% via-sky-500 via-35% to-emerald-500 to-85%">
+            CareerHub
+          </h1>
         </div>
-        <h1 className=" text-3xl md:text-5xl max-sm:place-content-center  text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-indigo-500 from-15% via-sky-500 via-35% to-emerald-500 to-85%">
-          CareerHub
-        </h1>
-      </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{links}</ul>
-      </div>
-      <div className="navbar-end grid ">
-    <Link className="btn md:text-2xl text-white  text-[8px] md:p-2 bg-gradient-to-r from-indigo-500 via-blue-500 from-15% via-sky-500 via-35% to-emerald-500 to-85%">Apply Now</Link>
-  </div>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1">{links}</ul>
+        </div>
+        <div className="navbar-end grid ">
+          <Link className=" max-sm:text-xl max-sm:p-2 md:text-2xl md:p-4 rounded-xl text-white  bg-gradient-to-r from-indigo-500 via-blue-500 from-15% via-sky-500 via-35% to-emerald-500 to-85%">
+            Apply Now
+          </Link>
+        </div>
       </div>
     </div>
   );
