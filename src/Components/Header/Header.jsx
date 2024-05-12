@@ -1,9 +1,9 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const links = (
     <>
-      <div className="flex gap-12 text-black text-xl my-12">
+      <div className="flex max-sm:flex-col max-sm:text-white max-sm:gap-4 max-sm:p-4 gap-12 text-black text-xl md:my-12">
         <NavLink
           to={"home"}
           className={({ isActive, isPending }) =>
@@ -24,7 +24,7 @@ const Header = () => {
   );
 
   return (
-    <div className="navbar bg-white">
+    <div className=" navbar bg-white max-sm:p-4">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -48,7 +48,7 @@ const Header = () => {
             {links}
           </ul>
         </div>
-        <h1 className=" text-5xl  text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-indigo-500 from-15% via-sky-500 via-35% to-emerald-500 to-85%">
+        <h1 className=" text-3xl md:text-5xl  text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-indigo-500 from-15% via-sky-500 via-35% to-emerald-500 to-85%">
           CareerHub
         </h1>
       </div>
@@ -56,8 +56,8 @@ const Header = () => {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <NavLink className="btn mr-32">Apply For Jobs</NavLink>
-      </div>
+    <Link className="btn">Apply Now</Link>
+  </div>
     </div>
   );
 };
