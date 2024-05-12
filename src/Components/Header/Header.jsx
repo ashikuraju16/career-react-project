@@ -23,7 +23,7 @@ const Header = () => {
   );
 
   return (
-    <div className=" navbar md:p-2  xl:w-[85%]  mx-auto ">
+    <div className=" navbar md:p-2 bg  xl:w-[85%]  mx-auto ">
       <div className="  w-full flex justify-between md:p-2 ">
         <div className="navbar max-sm:flex md:flex w-[90%] justify-between ">
           <div className="dropdown  lg:hidden">
