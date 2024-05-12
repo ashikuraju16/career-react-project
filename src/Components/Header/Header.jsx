@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 const Header = () => {
   const links = (
     <>
-      <div className="max-sm:flex max-sm:flex-col  text-black text-2xl font-extrabold md:flex-col md:space-x-24  max-sm:text-white max-sm:gap-4  ">
+      <div className="max-sm:flex max-sm:flex-col  text-[#757575] text-2xl font-extrabold md:flex-col md:space-x-24  max-sm:text-white max-sm:gap-4  ">
         <NavLink
           to={"home"}
           className={({ isActive, isPending }) =>
@@ -16,8 +16,24 @@ const Header = () => {
         >
           Home
         </NavLink>
-        <NavLink>Applied Jobs</NavLink>
-        <NavLink>Blogs</NavLink>
+        <NavLink 
+          to={"jobs"}
+          className={({ isActive, isPending }) =>
+            isActive
+              ? "bg-fuchsia-700 rounded-tl-3xl rounded-br-3xl p-2 text-xl text-white"
+              : isPending
+              ? "opacity-60"
+              : ""
+          }>Applied Jobs</NavLink>
+        <NavLink 
+          to={"blogs"}
+          className={({ isActive, isPending }) =>
+            isActive
+              ? "bg-fuchsia-700 rounded-tl-3xl rounded-br-3xl p-2 text-xl text-white"
+              : isPending
+              ? "opacity-60"
+              : ""
+          }>Blogs</NavLink>
       </div>
     </>
   );
