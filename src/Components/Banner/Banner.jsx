@@ -1,7 +1,7 @@
 const Banner = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2  ">
-      <div className="flex flex-col justify-center sm:p-6 max-sm:p-4 my-6 w-full md:p-6 xl:w-[70%]  mx-auto">
+      <div className="flex flex-col justify-center sm:p-6 max-sm:p-4 my-6 w-full md:p-6 xl:w-[80%]  mx-auto">
         <h1 className=" max-sm:text-5xl  text-7xl  font-extrabold  md:w-full text-start text-[#191919]">
           One Step Closer To Your{" "}
           <span className="text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-indigo-500 from-15% via-sky-500 via-35% to-emerald-500 to-85%">

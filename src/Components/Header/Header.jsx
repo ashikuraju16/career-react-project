@@ -24,7 +24,7 @@ const Header = () => {
   );
 
   return (
-    <div className=" navbar   md:p-2  xl:w-[85%]  mx-auto ">
+    <div className=" navbar   md:p-2  xl:w-[90%]  mx-auto ">
       <div className="  w-full flex justify-between md:p-2 ">
         <div className="navbar max-sm:flex md:flex w-[90%] justify-between  ">
           <div className="dropdown  lg:hidden">
@@ -53,7 +53,7 @@ const Header = () => {
               {links}
             </ul>
           </div>
-          <h1 className="ml-6 max-sm:mt-2 max-sm:text-4xl max-md:text-6xl md:text-7xl text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-indigo-500 from-15% via-sky-500 via-35% to-emerald-500 to-85%">
+          <h1 className="max-sm:mt-2 max-sm:text-4xl max-md:text-6xl md:text-7xl text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-indigo-500 from-15% via-sky-500 via-35% to-emerald-500 to-85%">
             CareerHub
           </h1>
         </div>

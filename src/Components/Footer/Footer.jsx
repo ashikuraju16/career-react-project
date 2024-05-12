@@ -3,9 +3,9 @@ import { Icon } from "@iconify/react";
 
 const Footer = () => {
   return (
-    <footer className=" md:p-10 bg-base-200 md:text-base-content my-8">
-      <div className="footer w-[70%] mx-auto md:w-full">
-        <aside className="text-4xl flex max-sm:gap-20 md:gap-12 mt-12 ">
+    <footer className=" md:p-10 bg-base-200 md:text-base-content max-md:grid">
+      <div className="footer w-[70%] mx-auto md:w-full sm:grid sm:grid-cols-3 sm:py-10 sm:w-[90%] lg:w-[80%]">
+        <aside className="text-4xl flex max-sm:gap-20 md:gap-12 mt-12 sm:gap-10 ">
           <a href="https://www.facebook.com/ashikuraju16">
             <Icon
               className="transition-all hover:rounded-bl-full hover:rounded-tr-full  hover:bg-fuchsia-700 hover:scale-150 duration-1000 hover:cursor-pointer"
@@ -26,7 +26,7 @@ const Footer = () => {
           </a>
         </aside>
         <nav className="">
-          <h6 className="footer-title max-sm:text-xl max-sm:text-center text-2xl">
+          <h6 className="footer-title max-sm:text-xl max-sm:text-center text-2xl ">
             Services
           </h6>
           <NavLink className="link link-hover">Branding</NavLink>
