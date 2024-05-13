@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import { useLoaderData, useParams } from "react-router-dom";
 
 const JobDetails = () => {
@@ -33,7 +34,19 @@ const JobDetails = () => {
             {currentJob?.experiences}
           </h4>
         </div>
-        <div className="col-span-1 bg-[#f4f2ff]" />
+        <div className="col-span-1 bg-[#f4f2ff]">
+          <div className="p-8">
+            <h6 className="font-extrabold text-3xl text-black">Job Details</h6>
+            <div className="border border-[#d4d0ff] mt-6" />
+            <div className="flex mt-6">
+              <p>
+                <img src="../../assets/" alt="" />
+                <span className="font-bold text-black">Salary :</span>{" "}
+                {currentJob?.salary}
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
