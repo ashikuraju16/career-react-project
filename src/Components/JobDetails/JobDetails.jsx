@@ -121,7 +121,7 @@ const JobDetails = () => {
           </div>{" "}
           <div className="sm:pb-28 sm:pt-8">
             {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
-            <button className="text-3xl w-full  text-white font-extrabold  bg-gradient-to-r from-[#818eff] from-10% via-[#8a82ff] via-30% to-[#9576ff] to-85% my-6 h-16 ">
+            <button className="text-3xl w-full rounded-lg  text-white font-extrabold  bg-gradient-to-r from-[#818eff] from-10% via-[#8a82ff] via-30% to-[#9576ff] to-85% my-6 h-16 ">
               Apply Now
             </button>
           </div>
