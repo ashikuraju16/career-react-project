@@ -12,7 +12,7 @@ const JobDetails = () => {
         Job Details
       </h1>
       <div className="grid max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-24 max-sm:py-12 text-xl leading-10 text-[#757575]">
-        <div className="col-span-2 px-8 max-sm:px-4 space-y-8  max-sm:py-12 ">
+        <div className="col-span-2 px-8 max-sm:px-4 space-y-8  sm:pb-12 ">
           <h1>
             {" "}
             <span className="font-bold text-black">Job Description :</span>{" "}
@@ -34,8 +34,8 @@ const JobDetails = () => {
             {currentJob?.experiences}
           </h4>
         </div>
-        <div className="max-sm:px-4">
-          <div className="col-span-1 py-12 px-12 rounded-lg text-2xl  max-sm:text-xl max-sm:px-3 bg-[#f4f2ff]">
+        <div className="max-sm:px-4 sm:px-8 sm:col-span-2 lg:col-span-1">
+          <div className="col-span-1 py-12 px-12 rounded-lg text-2xl lg:p-6  max-sm:text-xl max-sm:px-3 bg-[#f4f2ff]">
             <div className=" ">
               <h6 className="font-extrabold text-3xl text-black">
                 Job Details
@@ -49,7 +49,7 @@ const JobDetails = () => {
                     src="/src/assets/g logos/usd.png"
                     alt=""
                   />
-                  <p className="mt-3 max-sm:mt-2">
+                  <p className="mt-3 max-sm:mt-2 md:mt-1 ">
                     {" "}
                     <span className="font-bold text-black mr-1">Salary : </span>
                     {currentJob?.salary} (Per Month)
@@ -59,7 +59,7 @@ const JobDetails = () => {
                 {/* job title */}
                 <h6 className="flex ">
                   <img
-                    className=" h-8 mt-1 mr-4"
+                    className=" h-8 mt-1 md:mt-2 mr-4"
                     src="/src/assets/g logos/title.png"
                     alt=""
                   />
