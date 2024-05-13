@@ -10,6 +10,7 @@ const FeaturedJobs = () => {
       .then((res) => res.json())
       .then((data) => setJobs(data));
   }, []);
+  
   return (
     <div className="mt-28">
       <div className="text-center font-extrabold ">

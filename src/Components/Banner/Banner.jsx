@@ -1,4 +1,5 @@
 const Banner = () => {
+  
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 md:grid-cols-2  ">
       <div className="flex flex-col justify-center sm:p-6 max-sm:p-4 my-6 w-full md:p-6 xl:w-[76%] 2xl:w-[67%] mx-auto">
