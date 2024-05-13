@@ -120,8 +120,7 @@ const JobDetails = () => {
             </h6>
           </div>{" "}
           <div>
-            {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
-            <button className="text-3xl flex justify-center place-content-center bg-gray-200 my-6 p-3 ">
+            <button className="text-3xl w-full bg-gray-200 my-6 h-12 ">
               Apply Now
             </button>
           </div>
