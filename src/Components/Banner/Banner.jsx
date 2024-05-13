@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const Banner = () => {
   
   return (
@@ -14,10 +16,10 @@ const Banner = () => {
           need. It&apos;s your future. Come find it. Manage all your job
           applications from start to finish.
         </p>
-        {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
-        <button className="px-6 py-3 w-3/5 xl:w-2/6 xl:text-2xl sm:w-2/5  md:text-xl max-sm:w-3/6  text-white rounded-md bg-gradient-to-r from-[#818eff] from-10% via-[#8a82ff] via-35% to-[#9576ff] to-85%">
+       
+        <NavLink to="/job" className="px-6 py-4 text-xl font-extrabold h-16 text-center  xl:text-2xl sm:w-2/5  md:text-xl max-sm:w-3/6  text-white rounded-md bg-gradient-to-r from-[#818eff] from-10% via-[#8a82ff] via-35% to-[#9576ff] to-85%">
           Get Started
-        </button>
+        </NavLink>
       </div>
       <img
         className="w-full h-full "
