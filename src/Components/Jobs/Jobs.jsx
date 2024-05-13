@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
-import { Icon } from '@iconify/react';
+import { Icon } from "@iconify/react";
 const Jobs = ({ job }) => {
   const {
-    id,
     job_title,
     logo,
     company_name,
@@ -26,20 +25,20 @@ const Jobs = ({ job }) => {
         </div>
       </div>
       {/* location && salary */}
-      <div className='my-8 text-2xl text-[#757575]  lg:flex max-sm:flex-col  '>
-        <div className='flex'>
-        <Icon className=' mr-4 mt-0.5' icon="mi:location" />
-        <div>{location}</div>
+      <div className="my-8 text-2xl text-[#757575]  lg:flex max-sm:flex-col  ">
+        <div className="flex">
+          <Icon className=" mr-4 mt-0.5" icon="mi:location" />
+          <div>{location}</div>
         </div>
-        <div className='flex'>
-        <Icon className='lg:ml-8 mr-4 mt-0.5 ' icon="solar:dollar-outline" />
-        <div>{salary}</div>
+        <div className="flex">
+          <Icon className="lg:ml-8 mr-4 mt-0.5 " icon="solar:dollar-outline" />
+          <div>{salary}</div>
         </div>
       </div>
       {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
       <button className="px-2 py-3 ] max-sm:w-2/6 max-sm: text-xs font-bold xl:text-xl md:w-[45%] lg:w-[55%] xl:w-[30%]   md:text-xl text-white rounded-md bg-gradient-to-r from-[#818eff] from-10% via-[#8a82ff] via-35% to-[#9576ff] to-85%">
-      View Details
-        </button>
+        View Details
+      </button>
     </div>
   );
 };
