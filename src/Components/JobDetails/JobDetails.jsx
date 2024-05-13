@@ -35,6 +35,7 @@ const JobDetails = () => {
           </h4>
         </div>
         <div className="col-span-1 p-8 text-2xl bg-[#f4f2ff]">
+          <div>
           <div className=" ">
             <h6 className="font-extrabold text-3xl text-black">Job Details</h6>
             <div className="border border-[#d4d0ff] mt-6" />
@@ -52,6 +53,8 @@ const JobDetails = () => {
                   {currentJob?.salary} (Per Month)
                 </p>
               </h6>
+
+              {/* job title */}
               <h6 className="flex ">
                 <img
                   className=" h-8 mt-1 mr-4"
@@ -67,12 +70,14 @@ const JobDetails = () => {
               </h6>
             </div>
           </div>
+          {/* Contact Information */}
           <div className=" my-12">
             <h6 className="font-extrabold text-3xl text-black">
               Contact Information
             </h6>
             <div className="border border-[#d4d0ff] mt-6" />
           </div>
+          {/* phone */}
           <h6 className="flex ">
             <img
               className=" h-8  mr-6"
@@ -85,6 +90,7 @@ const JobDetails = () => {
               {currentJob?.contact_information.phone}
             </p>
           </h6>
+          {/* Email */}
           <h6 className="flex mt-6 ">
             <img
               className=" h-8  mr-4"
@@ -97,7 +103,29 @@ const JobDetails = () => {
               {currentJob?.contact_information.email}
             </p>
           </h6>
+          {/* Address : */}
+          <h6 className="flex mt-6 ">
+            <img
+              className=" h-8 mt-2 mr-6"
+              src="/src/assets/g logos/location.png"
+              alt=""
+            />
+            <p className="mt-2">
+              {" "}
+              <span className="font-bold text-black mr-1">Address :</span>
+              {currentJob?.contact_information.address}
+            </p>
+          </h6>
+          </div>
+         c
+         
         </div>
+        {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
+        <button
+          className=" flex justify-center items-center max-sm:w-[50%] sm:w-[30%] md:w-[20%] lg-[10%] xl:w-[15%] max-sm:mt-3 text-xl font-bold mx-auto max-sm:text-base max-sm:p-2 max-md:text-2xl max-md:p-4 md:text-2xl p-4 rounded-xl text-white bg-gradient-to-r from-[#818eff] from-10% via-[#8a82ff] via-30% to-[#9576ff] to-85%"
+        >
+          See All Jobs
+        </button>
       </div>
     </div>
   );
