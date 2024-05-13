@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-
+import { Icon } from '@iconify/react';
 const Jobs = ({ job }) => {
   const {
     id,
@@ -13,8 +13,8 @@ const Jobs = ({ job }) => {
   } = job;
 
   return (
-    <div className="border m-4 p-8 rounded-lg">
-      <img className="w-[25%]" src={logo} alt="" />
+    <div className="border-2 border-[#e8e8e8] m-4 p-8 rounded-xl">
+      <img className="w-[25%] max-sm:w-[45%] sm:w-[40%]" src={logo} alt="" />
       <h1 className="text-2xl text-black font-extrabold mt-8">{job_title}</h1>
       <p className="text-[#757575] text-xl my-3">{company_name}</p>
       <div className="flex  space-x-6 text-lg  font-bold">
@@ -24,7 +24,17 @@ const Jobs = ({ job }) => {
         <div className="rounded size-fit p-0.5  bg-gradient-to-r from-[#818eff] from-10% via-[#8a82ff] via-30% to-[#9576ff] to-85%  ">
           <div className="px-4 py-1 rounded  bg-white ">{job_type}</div>
         </div>
-        
+      </div>
+      {/* location && salary */}
+      <div className='my-8 text-2xl text-[#757575]  lg:flex max-sm:flex-col  '>
+        <div className='flex'>
+        <Icon className=' mr-4 mt-0.5' icon="mi:location" />
+        <div>{location}</div>
+        </div>
+        <div className='flex'>
+        <Icon className='lg:ml-8 mr-4 mt-0.5 ' icon="solar:dollar-outline" />
+        <div>{salary}</div>
+        </div>
       </div>
     </div>
   );
