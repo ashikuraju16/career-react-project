@@ -12,7 +12,7 @@ const JobDetails = () => {
         Job Details
       </h1>
       <div className="grid max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-24 max-sm:py-12 text-xl leading-10 text-[#757575]">
-        <div className="col-span-2 px-8 max-sm:px-4 space-y-8  sm:pb-12 ">
+        <div className="col-span-2 px-8 max-sm:px-4 space-y-8  pb-8 ">
           <h1>
             {" "}
             <span className="font-bold text-black">Job Description :</span>{" "}
