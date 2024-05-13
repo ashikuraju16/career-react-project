@@ -7,12 +7,12 @@ const JobDetails = () => {
   const currentJob = jobs.find((job) => job.id === Number.parseInt(jobsId));
   console.log(currentJob);
   return (
-    <div className=" max-w-screen-2xl mx-auto h-[90vh]">
-      <h1 className="text-5xl text-black font-extrabold text-center pt-24">
-        Job Details{" "}
+    <div className=" max-w-screen-2xl mx-auto h-[90]">
+      <h1 className="text-5xl text-black font-extrabold text-center pt-24 max-sm:pt-12">
+        Job Details
       </h1>
-      <div className="grid grid-cols-3 pt-24 text-xl leading-10 text-[#757575]">
-        <div className="col-span-2 px-8 space-y-12">
+      <div className="grid max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-24 max-sm:py-12 text-xl leading-10 text-[#757575]">
+        <div className="col-span-2 px-8 max-sm:px-4 space-y-max-sm:py-12  max-sm:py-12 ">
           <h1>
             {" "}
             <span className="font-bold text-black">Job Description :</span>{" "}
@@ -34,8 +34,8 @@ const JobDetails = () => {
             {currentJob?.experiences}
           </h4>
         </div>
-        <div>
-          <div className="col-span-1 py-12 px-12 rounded-lg text-2xl bg-[#f4f2ff]">
+        <div className="max-sm:px-4">
+          <div className="col-span-1 py-12 px-12 rounded-lg text-2xl max-sm:text-xl max-sm:px-3 bg-[#f4f2ff]">
             <div className=" ">
               <h6 className="font-extrabold text-3xl text-black">
                 Job Details
@@ -49,7 +49,7 @@ const JobDetails = () => {
                     src="/src/assets/g logos/usd.png"
                     alt=""
                   />
-                  <p className="mt-3">
+                  <p className="mt-3 max-sm:mt-2">
                     {" "}
                     <span className="font-bold text-black mr-1">Salary : </span>
                     {currentJob?.salary} (Per Month)
@@ -120,7 +120,8 @@ const JobDetails = () => {
             </h6>
           </div>{" "}
           <div>
-            <button className="text-3xl w-full bg-gray-200 my-6 h-12 ">
+            {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
+            <button className="text-3xl w-full text-white font-extrabold  bg-gradient-to-r from-[#818eff] from-10% via-[#8a82ff] via-30% to-[#9576ff] to-85% my-6 h-16 ">
               Apply Now
             </button>
           </div>

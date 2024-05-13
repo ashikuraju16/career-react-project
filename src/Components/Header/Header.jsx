@@ -14,7 +14,7 @@ const Header = () => {
               : ""
           }
         >
-        Statistics
+          Statistics
         </NavLink>
         <NavLink
           to={"appliedJobs"}
