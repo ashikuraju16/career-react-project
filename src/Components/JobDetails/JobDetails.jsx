@@ -7,7 +7,7 @@ const JobDetails = () => {
   const currentJob = jobs.find((job) => job.id === Number.parseInt(jobsId));
   console.log(currentJob);
   return (
-    <div className="w-[80%] mx-auto">
+    <div className=" max-w-screen-2xl mx-auto h-[90vh]">
       <h1 className="text-5xl text-black font-extrabold text-center pt-24">
         Job Details{" "}
       </h1>
@@ -34,98 +34,98 @@ const JobDetails = () => {
             {currentJob?.experiences}
           </h4>
         </div>
-        <div className="col-span-1 p-8 text-2xl bg-[#f4f2ff]">
-          <div>
-          <div className=" ">
-            <h6 className="font-extrabold text-3xl text-black">Job Details</h6>
-            <div className="border border-[#d4d0ff] mt-6" />
-            <div className=" mt-6 space-y-4">
-              {/* salary */}
-              <h6 className="flex ">
-                <img
-                  className=" h-8 mt-1 mr-5"
-                  src="/src/assets/g logos/usd.png"
-                  alt=""
-                />
-                <p className="mt-3">
-                  {" "}
-                  <span className="font-bold text-black mr-1">Salary : </span>
-                  {currentJob?.salary} (Per Month)
-                </p>
+        <div>
+          <div className="col-span-1 py-12 px-12 rounded-lg text-2xl bg-[#f4f2ff]">
+            <div className=" ">
+              <h6 className="font-extrabold text-3xl text-black">
+                Job Details
               </h6>
+              <div className="border border-[#d4d0ff] mt-6" />
+              <div className=" mt-6 space-y-4">
+                {/* salary */}
+                <h6 className="flex ">
+                  <img
+                    className=" h-8 mt-1 mr-5"
+                    src="/src/assets/g logos/usd.png"
+                    alt=""
+                  />
+                  <p className="mt-3">
+                    {" "}
+                    <span className="font-bold text-black mr-1">Salary : </span>
+                    {currentJob?.salary} (Per Month)
+                  </p>
+                </h6>
 
-              {/* job title */}
-              <h6 className="flex ">
-                <img
-                  className=" h-8 mt-1 mr-4"
-                  src="/src/assets/g logos/title.png"
-                  alt=""
-                />
-                <p className="mt-3">
-                  <span className="font-bold text-black mr-1">
-                    Job Title :{" "}
-                  </span>
-                  {currentJob?.job_title}
-                </p>
-              </h6>
+                {/* job title */}
+                <h6 className="flex ">
+                  <img
+                    className=" h-8 mt-1 mr-4"
+                    src="/src/assets/g logos/title.png"
+                    alt=""
+                  />
+                  <p className="mt-3">
+                    <span className="font-bold text-black mr-1">
+                      Job Title :{" "}
+                    </span>
+                    {currentJob?.job_title}
+                  </p>
+                </h6>
+              </div>
             </div>
-          </div>
-          {/* Contact Information */}
-          <div className=" my-12">
-            <h6 className="font-extrabold text-3xl text-black">
-              Contact Information
+            {/* Contact Information */}
+            <div className=" my-12 ">
+              <h6 className="font-extrabold text-3xl text-black">
+                Contact Information
+              </h6>
+              <div className="border border-[#d4d0ff] mt-6" />
+            </div>
+            {/* phone */}
+            <h6 className="flex ">
+              <img
+                className=" h-8  mr-6"
+                src="/src/assets/g logos/phone.png"
+                alt=""
+              />
+              <p className="mt-2">
+                {" "}
+                <span className="font-bold text-black mr-1">Phone : </span>
+                {currentJob?.contact_information.phone}
+              </p>
             </h6>
-            <div className="border border-[#d4d0ff] mt-6" />
+            {/* Email */}
+            <h6 className="flex mt-6 ">
+              <img
+                className=" h-8  mr-4"
+                src="/src/assets/g logos/email.png"
+                alt=""
+              />
+              <p className="mt-2">
+                {" "}
+                <span className="font-bold text-black mr-1">Email :</span>
+                {currentJob?.contact_information.email}
+              </p>
+            </h6>
+            {/* Address : */}
+            <h6 className="flex mt-6 ">
+              <img
+                className=" h-8 mt-2 mr-6"
+                src="/src/assets/g logos/location.png"
+                alt=""
+              />
+              <p className="mt-2">
+                {" "}
+                <span className="font-bold text-black mr-1 ">Address :</span>
+                {currentJob?.contact_information.address}
+              </p>
+            </h6>
+          </div>{" "}
+          <div>
+            {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
+            <button className="text-3xl flex justify-center place-content-center bg-gray-200 my-6 p-3 ">
+              Apply Now
+            </button>
           </div>
-          {/* phone */}
-          <h6 className="flex ">
-            <img
-              className=" h-8  mr-6"
-              src="/src/assets/g logos/phone.png"
-              alt=""
-            />
-            <p className="mt-2">
-              {" "}
-              <span className="font-bold text-black mr-1">Phone : </span>
-              {currentJob?.contact_information.phone}
-            </p>
-          </h6>
-          {/* Email */}
-          <h6 className="flex mt-6 ">
-            <img
-              className=" h-8  mr-4"
-              src="/src/assets/g logos/email.png"
-              alt=""
-            />
-            <p className="mt-2">
-              {" "}
-              <span className="font-bold text-black mr-1">Email :</span>
-              {currentJob?.contact_information.email}
-            </p>
-          </h6>
-          {/* Address : */}
-          <h6 className="flex mt-6 ">
-            <img
-              className=" h-8 mt-2 mr-6"
-              src="/src/assets/g logos/location.png"
-              alt=""
-            />
-            <p className="mt-2">
-              {" "}
-              <span className="font-bold text-black mr-1">Address :</span>
-              {currentJob?.contact_information.address}
-            </p>
-          </h6>
-          </div>
-         c
-         
         </div>
-        {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
-        <button
-          className=" flex justify-center items-center max-sm:w-[50%] sm:w-[30%] md:w-[20%] lg-[10%] xl:w-[15%] max-sm:mt-3 text-xl font-bold mx-auto max-sm:text-base max-sm:p-2 max-md:text-2xl max-md:p-4 md:text-2xl p-4 rounded-xl text-white bg-gradient-to-r from-[#818eff] from-10% via-[#8a82ff] via-30% to-[#9576ff] to-85%"
-        >
-          See All Jobs
-        </button>
       </div>
     </div>
   );
