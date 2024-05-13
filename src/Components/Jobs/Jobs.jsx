@@ -13,7 +13,7 @@ const Jobs = ({ job }) => {
 
   return (
     <div className="border-2 border-[#e8e8e8] m-4 p-8 rounded-xl">
-      <img className="w-[25%] max-sm:w-[45%] sm:w-[40%]" src={logo} alt="" />
+      <img className=" h-12" src={logo} alt="" />
       <h1 className="text-2xl text-black font-extrabold mt-8">{job_title}</h1>
       <p className="text-[#757575] text-xl my-3">{company_name}</p>
       <div className="flex  space-x-6 text-lg  font-bold">
