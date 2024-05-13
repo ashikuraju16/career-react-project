@@ -21,6 +21,17 @@ const JobDetails = () => {
             <span className="font-bold text-black">Job Responsibility : </span>
             {currentJob?.job_responsibility}
           </h1>
+          <h4>
+            <span className="font-bold text-black">
+              Educational Requirements:
+            </span>{" "}
+            <br />
+            {currentJob?.educational_requirements}
+          </h4>
+          <h4>
+            <span className="font-bold text-black">Experiences:</span> <br />{" "}
+            {currentJob?.experiences}
+          </h4>
         </div>
         <div className="col-span-1 bg-[#f4f2ff]" />
       </div>
