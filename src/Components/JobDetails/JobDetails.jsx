@@ -12,7 +12,7 @@ const JobDetails = () => {
         Job Details
       </h1>
       <div className="grid max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-24 max-sm:py-12 text-xl leading-10 text-[#757575]">
-        <div className="col-span-2 px-8 max-sm:px-4 space-y-max-sm:py-12  max-sm:py-12 ">
+        <div className="col-span-2 px-8 max-sm:px-4 space-y-8  max-sm:py-12 ">
           <h1>
             {" "}
             <span className="font-bold text-black">Job Description :</span>{" "}
@@ -35,12 +35,12 @@ const JobDetails = () => {
           </h4>
         </div>
         <div className="max-sm:px-4">
-          <div className="col-span-1 py-12 px-12 rounded-lg text-2xl max-sm:text-xl max-sm:px-3 bg-[#f4f2ff]">
+          <div className="col-span-1 py-12 px-12 rounded-lg text-2xl  max-sm:text-xl max-sm:px-3 bg-[#f4f2ff]">
             <div className=" ">
               <h6 className="font-extrabold text-3xl text-black">
                 Job Details
               </h6>
-              <div className="border border-[#d4d0ff] mt-6" />
+              <div className="border border-[#d4d0ff] mt-6 " />
               <div className=" mt-6 space-y-4">
                 {/* salary */}
                 <h6 className="flex ">
