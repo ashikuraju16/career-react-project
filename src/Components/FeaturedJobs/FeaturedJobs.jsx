@@ -1,5 +1,7 @@
+/* eslint-disable react/jsx-no-undef */
 import { useEffect, useState } from "react";
 import Jobs from "../Jobs/Jobs";
+import { NavLink } from "react-router-dom";
 
 const FeaturedJobs = () => {
   const [jobs, setJobs] = useState([]);
@@ -21,6 +23,12 @@ const FeaturedJobs = () => {
         {jobs.map((job) => (
           <Jobs key={job.id} job={job} />
         ))}
+      </div>
+
+      <div className="pt-12 pb-20 max-sm:py-6">
+      <NavLink className=" flex justify-center items-center max-sm:w-[50%] sm:w-[30%] md:w-[20%] lg-[10%] xl:w-[15%] max-sm:mt-3 text-xl font-bold mx-auto max-sm:text-base max-sm:p-2 max-md:text-2xl max-md:p-4 md:text-2xl p-4 rounded-xl text-white bg-gradient-to-r from-[#818eff] from-10% via-[#8a82ff] via-30% to-[#9576ff] to-85%">
+      See All Jobs
+          </NavLink>
       </div>
     </div>
   );
