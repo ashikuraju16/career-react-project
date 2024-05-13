@@ -6,6 +6,9 @@ import "./index.css";
 import Layout from "./Components/Layout/Layout";
 import Home from "./Components/Home/Home";
 import { ResponsiveIndicator } from "@sohanemon/utils/components";
+import JobDetails from "./Components/JobDetails/JobDetails";
+import FeaturedJobs from "./Components/FeaturedJobs/FeaturedJobs";
+
 
 const router = createBrowserRouter([
   {
@@ -15,7 +18,13 @@ const router = createBrowserRouter([
       {
         path: "/home",
         element: <Home />,
-      },
+      },{
+        path: "/jobs",
+        element:<JobDetails />,
+      },{
+        path: "/job",
+        element:<FeaturedJobs />
+      }
     ],
   },
 ]);

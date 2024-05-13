@@ -26,7 +26,9 @@ const FeaturedJobs = () => {
       </div>
 
       <div
-        className={`dataLength === jobs.length && 'hidden' sm:pt-6 sm:pb-20 pt-4 py-6`}
+        className={`${
+          dataLength === jobs.length ? "hidden" : "block"
+        } sm:pt-6 sm:pb-20 pt-4 py-6`}
       >
         {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
         <button
