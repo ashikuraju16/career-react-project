@@ -1,4 +1,3 @@
-import { Icon } from "@iconify/react";
 import { useLoaderData, useParams } from "react-router-dom";
 
 const JobDetails = () => {
@@ -6,6 +5,7 @@ const JobDetails = () => {
 
   const { jobsId } = useParams();
   const currentJob = jobs.find((job) => job.id === Number.parseInt(jobsId));
+  console.log(currentJob);
   return (
     <div className="w-[80%] mx-auto">
       <h1 className="text-5xl text-black font-extrabold text-center pt-24">
@@ -34,18 +34,69 @@ const JobDetails = () => {
             {currentJob?.experiences}
           </h4>
         </div>
-        <div className="col-span-1 bg-[#f4f2ff]">
-          <div className="p-8">
+        <div className="col-span-1 p-8 text-2xl bg-[#f4f2ff]">
+          <div className=" ">
             <h6 className="font-extrabold text-3xl text-black">Job Details</h6>
             <div className="border border-[#d4d0ff] mt-6" />
-            <div className="flex mt-6">
-              <p>
-                <img src="../../assets/" alt="" />
-                <span className="font-bold text-black">Salary :</span>{" "}
-                {currentJob?.salary}
-              </p>
+            <div className=" mt-6 space-y-4">
+              {/* salary */}
+              <h6 className="flex ">
+                <img
+                  className=" h-8 mt-1 mr-5"
+                  src="/src/assets/g logos/usd.png"
+                  alt=""
+                />
+                <p className="mt-3">
+                  {" "}
+                  <span className="font-bold text-black mr-1">Salary : </span>
+                  {currentJob?.salary} (Per Month)
+                </p>
+              </h6>
+              <h6 className="flex ">
+                <img
+                  className=" h-8 mt-1 mr-4"
+                  src="/src/assets/g logos/title.png"
+                  alt=""
+                />
+                <p className="mt-3">
+                  <span className="font-bold text-black mr-1">
+                    Job Title :{" "}
+                  </span>
+                  {currentJob?.job_title}
+                </p>
+              </h6>
             </div>
           </div>
+          <div className=" my-12">
+            <h6 className="font-extrabold text-3xl text-black">
+              Contact Information
+            </h6>
+            <div className="border border-[#d4d0ff] mt-6" />
+          </div>
+          <h6 className="flex ">
+            <img
+              className=" h-8  mr-6"
+              src="/src/assets/g logos/phone.png"
+              alt=""
+            />
+            <p className="mt-2">
+              {" "}
+              <span className="font-bold text-black mr-1">Phone : </span>
+              {currentJob?.contact_information.phone}
+            </p>
+          </h6>
+          <h6 className="flex mt-6 ">
+            <img
+              className=" h-8  mr-4"
+              src="/src/assets/g logos/email.png"
+              alt=""
+            />
+            <p className="mt-2">
+              {" "}
+              <span className="font-bold text-black mr-1">Email :</span>
+              {currentJob?.contact_information.email}
+            </p>
+          </h6>
         </div>
       </div>
     </div>
