@@ -36,6 +36,10 @@ const Jobs = ({ job }) => {
         <div>{salary}</div>
         </div>
       </div>
+      {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
+      <button className="px-2 py-3 w-3/5 xl:w-[25%] font-bold xl:text-2xl sm:w-2/5  md:text-xl max-sm:w-3/6  text-white rounded-md bg-gradient-to-r from-[#818eff] from-10% via-[#8a82ff] via-35% to-[#9576ff] to-85%">
+      View Details
+        </button>
     </div>
   );
 };
