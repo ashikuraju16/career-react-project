@@ -37,7 +37,7 @@ const Jobs = ({ job }) => {
         </div>
       </div>
       {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
-      <button className="px-2 py-3 w-3/5 xl:w-[25%] font-bold xl:text-2xl sm:w-2/5  md:text-xl max-sm:w-3/6  text-white rounded-md bg-gradient-to-r from-[#818eff] from-10% via-[#8a82ff] via-35% to-[#9576ff] to-85%">
+      <button className="px-2 py-3 ] max-sm:w-2/6 max-sm: text-xs font-bold xl:text-xl md:w-[45%] lg:w-[55%] xl:w-[30%]   md:text-xl text-white rounded-md bg-gradient-to-r from-[#818eff] from-10% via-[#8a82ff] via-35% to-[#9576ff] to-85%">
       View Details
         </button>
     </div>
