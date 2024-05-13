@@ -16,7 +16,7 @@ const Header = () => {
         >
           Home
         </NavLink>
-        <NavLink 
+        <NavLink
           to={"jobs"}
           className={({ isActive, isPending }) =>
             isActive
@@ -24,8 +24,11 @@ const Header = () => {
               : isPending
               ? "opacity-60"
               : ""
-          }>Applied Jobs</NavLink>
-        <NavLink 
+          }
+        >
+          Applied Jobs
+        </NavLink>
+        <NavLink
           to={"blogs"}
           className={({ isActive, isPending }) =>
             isActive
@@ -33,7 +36,10 @@ const Header = () => {
               : isPending
               ? "opacity-60"
               : ""
-          }>Blogs</NavLink>
+          }
+        >
+          Blogs
+        </NavLink>
       </div>
     </>
   );

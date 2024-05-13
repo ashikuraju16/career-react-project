@@ -3,9 +3,9 @@ import JobCategory from "../JobCategory/JobCategory";
 
 const Home = () => {
   return (
-    <div >
-   <Banner />
-   <JobCategory />
+    <div>
+      <Banner />
+      <JobCategory />
     </div>
   );
 };
