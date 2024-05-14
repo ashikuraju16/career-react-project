@@ -5,7 +5,7 @@ const Blogs = () => {
         <h1 className="text-3xl max-sm:text-2xl max-sm:px-3 font-extrabold text-black">
           Technical Database Engineer:
         </h1>
-        <div className="ml-10 space-y-4 my-8 max-sm:ml-5">
+        <div className="ml-10 space-y-4 my-8 max-sm:ml-5 leading-[28px]">
           <p>
             <span className="font-bold text-black text-xl max-sm:text-lg">
               {" "}
@@ -32,7 +32,7 @@ const Blogs = () => {
         <h1 className="text-3xl max-sm:text-2xl max-sm:px-3 font-extrabold text-black">
           Senior Product Designer:
         </h1>
-        <div className="ml-10 space-y-4 my-8 max-sm:ml-5">
+        <div className="ml-10 space-y-4 my-8 max-sm:ml-5  leading-[28px]">
           <p>
             <span className="font-bold text-black text-xl max-sm:text-lg">
               {" "}
@@ -45,12 +45,38 @@ const Blogs = () => {
           <p>
             <span className="font-bold text-black text-xl max-sm:text-lg">
               {" "}
-              Planet PostgreSQL:
+              Smashing Magazine:
             </span>{" "}
-            Smashing Magazine: Smashing Magazine publishes articles on web
-            design, front-end development, and user experience. It includes
-            resources for designers at all levels, including senior
-            professionals.
+            Smashing Magazine publishes articles on web design, front-end
+            development, and user experience. It includes resources for
+            designers at all levels, including senior professionals.
+          </p>
+        </div>
+      </div>
+      {/* Software Engineer: */}
+      <div className="text-lg max-sm:text-xs text-[#757575] sm:w-[90%] xl:w-[60%] mx-auto">
+        <h1 className="text-3xl max-sm:text-2xl max-sm:px-3 font-extrabold text-black">
+          Software Engineer:
+        </h1>
+        <div className="ml-10 space-y-4 my-8 max-sm:ml-5  leading-[28px]">
+          <p>
+            <span className="font-bold text-black text-xl max-sm:text-lg">
+              {" "}
+              InVision Blog:
+            </span>{" "}
+            Stack Overflow Blog: Stack Overflow is a widely used platform for
+            programming Q&A. Their blog covers a variety of topics relevant to
+            software engineers, including coding best practices, technology
+            trends, and career advice.
+          </p>
+          <p>
+            <span className="font-bold text-black text-xl max-sm:text-lg">
+              {" "}
+              Smashing Magazine:
+            </span>{" "}
+            Smashing Magazine publishes articles on web design, front-end
+            development, and user experience. It includes resources for
+            designers at all levels, including senior professionals.
           </p>
         </div>
       </div>
