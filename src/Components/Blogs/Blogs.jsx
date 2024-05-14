@@ -1,13 +1,13 @@
 const Blogs = () => {
   return (
-    <div className=" h-fit  ">
-      <div className="text-lg max-sm:text-xs text-[#757575] sm:w-[90%] xl:w-[60%] mx-auto">
-        <h1 className="text-3xl max-sm:text-2xl max-sm:px-3 font-extrabold text-black">
+    <div className=" h-fit py-20 sm:w-[90%] xl:w-[70%] mx-auto ">
+      <div className="text-lg max-sm:text-lg text-[#757575] ">
+        <h1 className="text-4xl max-sm:text-2xl max-sm:px-3 font-extrabold text-black">
           Technical Database Engineer:
         </h1>
         <div className="ml-10 space-y-4 my-8 max-sm:ml-5 leading-[28px]">
           <p>
-            <span className="font-bold text-black text-xl max-sm:text-lg">
+            <span className="font-bold text-black text-xl">
               {" "}
               Percona Database Performance Blog:
             </span>{" "}
@@ -28,11 +28,11 @@ const Blogs = () => {
       </div>
       {/* Senior Product Designer: */}
 
-      <div className="text-lg max-sm:text-xs text-[#757575] sm:w-[90%] xl:w-[60%] mx-auto">
-        <h1 className="text-3xl max-sm:text-2xl max-sm:px-3 font-extrabold text-black">
+      <div className="text-lg max-sm:text-lg text-[#757575]">
+        <h1 className="text-4xl max-sm:text-2xl max-sm:px-3 font-extrabold text-black">
           Senior Product Designer:
         </h1>
-        <div className="ml-10 space-y-4 my-8 max-sm:ml-5  leading-[28px]">
+        <div className="ml-10 space-y-4 my-8 max-sm:ml-5 max-sm:leading-6  leading-[28px]">
           <p>
             <span className="font-bold text-black text-xl max-sm:text-lg">
               {" "}
@@ -54,11 +54,11 @@ const Blogs = () => {
         </div>
       </div>
       {/* Software Engineer: */}
-      <div className="text-lg max-sm:text-xs text-[#757575] sm:w-[90%] xl:w-[60%] mx-auto">
-        <h1 className="text-3xl max-sm:text-2xl max-sm:px-3 font-extrabold text-black">
+      <div className="text-lg max-sm:text-lg text-[#757575]">
+        <h1 className="text-4xl max-sm:text-2xl max-sm:px-3 font-extrabold text-black">
           Software Engineer:
         </h1>
-        <div className="ml-10 space-y-4 my-8 max-sm:ml-5  leading-[28px]">
+        <div className="ml-10 space-y-4 my-8 max-sm:ml-5 max-sm:leading-6 leading-[28px]">
           <p>
             <span className="font-bold text-black text-xl max-sm:text-lg">
               {" "}
@@ -72,7 +72,7 @@ const Blogs = () => {
           <p>
             <span className="font-bold text-black text-xl max-sm:text-lg">
               {" "}
-              Martin Fowler's Blog: 
+              Martin Fowler&apos;s Blog: 
             </span>{" "}
           Martin Fowler is a renowned software engineer and author known for his expertise in agile methodologies, software design, and architecture. His blog contains insightful articles on software development practices and industry trends.
 
