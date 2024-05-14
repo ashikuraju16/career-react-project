@@ -103,7 +103,7 @@ const JobDetails = () => {
               />
               <p className="mt-2">
                 {" "}
-                <span className="font-bold text-black mr-1">Email :</span>
+                <span className="font-bold text-black mr-1 max-sm:ml-2">Email :</span>
                  {currentJob?.contact_information.email}
               </p>
             </h6>
