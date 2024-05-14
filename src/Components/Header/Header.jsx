@@ -17,7 +17,7 @@ const Header = () => {
           Statistics
         </NavLink>
         <NavLink
-          to={"appliedJobs"}
+          to={"applied"}
           className={({ isActive, isPending }) =>
             isActive
               ? "bg-fuchsia-700 rounded-tl-3xl rounded-br-3xl p-2 text-xl text-white"
