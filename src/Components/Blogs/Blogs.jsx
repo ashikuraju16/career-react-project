@@ -72,11 +72,10 @@ const Blogs = () => {
           <p>
             <span className="font-bold text-black text-xl max-sm:text-lg">
               {" "}
-              Smashing Magazine:
+              Martin Fowler's Blog: 
             </span>{" "}
-            Smashing Magazine publishes articles on web design, front-end
-            development, and user experience. It includes resources for
-            designers at all levels, including senior professionals.
+          Martin Fowler is a renowned software engineer and author known for his expertise in agile methodologies, software design, and architecture. His blog contains insightful articles on software development practices and industry trends.
+
           </p>
         </div>
       </div>
