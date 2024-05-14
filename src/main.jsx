@@ -9,7 +9,7 @@ import { ResponsiveIndicator } from "@sohanemon/utils/components";
 import JobDetails from "./Components/JobDetails/JobDetails";
 import FeaturedJobs from "./Components/FeaturedJobs/FeaturedJobs";
 import Blogs from "./Components/Blogs/Blogs";
-
+import AppliedJobs from "./Components/AppliedJobs/AppliedJobs";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +22,10 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
+        path: "/appliedJobs",
+        element: <AppliedJobs />,
+      },
+      {
         path: "/jobs/:jobsId",
         loader: () => fetch("jobs.json"),
         element: <JobDetails />,
@@ -29,10 +33,11 @@ const router = createBrowserRouter([
       {
         path: "/job",
         element: <FeaturedJobs />,
-      },{
+      },
+      {
         path: "/blogs",
         element: <Blogs />,
-      }
+      },
     ],
   },
 ]);
