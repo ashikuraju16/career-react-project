@@ -18,8 +18,8 @@ const Jobs = ({ job }) => {
       <img className=" h-12" src={logo} alt="" />
       <h1 className="text-2xl text-black font-extrabold mt-8">{job_title}</h1>
       <p className="text-[#757575] text-xl my-3">{company_name}</p>
-      <div className="flex  space-x-6 text-lg  font-bold">
-        <div className="rounded size-fit p-0.5  bg-gradient-to-r from-[#818eff] from-10% via-[#8a82ff] via-30% to-[#9576ff] to-85%  ">
+      <div className="flex max-sm:text-xs  space-x-6 text-lg  font-bold">
+        <div className=" rounded size-fit p-0.5  bg-gradient-to-r from-[#818eff] from-10% via-[#8a82ff] via-30% to-[#9576ff] to-85%  ">
           <div className="px-4 py-1 rounded bg-white ">{remote_or_onsite}</div>
         </div>
         <div className="rounded size-fit p-0.5  bg-gradient-to-r from-[#818eff] from-10% via-[#8a82ff] via-30% to-[#9576ff] to-85%  ">
