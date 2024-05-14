@@ -1,16 +1,17 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 import { saveJobApplication } from "../LocalStore";
-// import 'sweetalert2/src/sweetalert2.scss'
+
 
 const JobDetails = () => {
   const jobs = useLoaderData();
-
-  const { jobsId } = useParams();
-  const currentJob = jobs.find((job) => job.id === Number.parseInt(jobsId));
-  console.log(currentJob);
+  const { id } = useParams();
+  const idInt = Number.parseInt(id);
+  const currentJob = jobs.find((job) => job.id === idInt);
+ 
+  
   const action = () => {
-    saveJobApplication(jobsId);
+    saveJobApplication(idInt);
     Swal.fire({
       position: "top-center",
 
