@@ -8,23 +8,30 @@ import Home from "./Components/Home/Home";
 import { ResponsiveIndicator } from "@sohanemon/utils/components";
 import JobDetails from "./Components/JobDetails/JobDetails";
 import FeaturedJobs from "./Components/FeaturedJobs/FeaturedJobs";
+import Blogs from "./Components/Blogs/Blogs";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
+
     children: [
       {
         path: "/home",
         element: <Home />,
-      },{
+      },
+      {
         path: "/jobs/:jobsId",
         loader: () => fetch("jobs.json"),
-        element:<JobDetails />,
-      },{
+        element: <JobDetails />,
+      },
+      {
         path: "/job",
-        element:<FeaturedJobs />
+        element: <FeaturedJobs />,
+      },{
+        path: "/blogs",
+        element: <Blogs />,
       }
     ],
   },
