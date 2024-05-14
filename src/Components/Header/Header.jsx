@@ -5,7 +5,7 @@ const Header = () => {
     <>
       <div className="max-sm:flex max-sm:flex-col  text-[#757575] text-2xl font-extrabold md:flex-col md:space-x-24  max-sm:text-white max-sm:gap-4  ">
         <NavLink
-          to={"home"}
+          to={"/"}
           className={({ isActive, isPending }) =>
             isActive
               ? "bg-fuchsia-700 rounded-tl-3xl rounded-br-3xl p-2 text-xl text-white"
