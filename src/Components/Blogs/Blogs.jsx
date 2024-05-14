@@ -62,9 +62,9 @@ const Blogs = () => {
           <p>
             <span className="font-bold text-black text-xl max-sm:text-lg">
               {" "}
-              InVision Blog:
+              Stack Overflow Blog: 
             </span>{" "}
-            Stack Overflow Blog: Stack Overflow is a widely used platform for
+         Stack Overflow is a widely used platform for
             programming Q&A. Their blog covers a variety of topics relevant to
             software engineers, including coding best practices, technology
             trends, and career advice.
