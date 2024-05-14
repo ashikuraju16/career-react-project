@@ -38,6 +38,7 @@ const FeaturedJobs = () => {
         >
           See All Jobs
         </button>
+     
       </div>
     </div>
   );
