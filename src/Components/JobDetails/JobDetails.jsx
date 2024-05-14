@@ -81,11 +81,13 @@ const JobDetails = () => {
             </div>
             {/* phone */}
             <h6 className="flex ">
-              <img
+            <figure>
+            <img
                 className=" h-8  mr-6"
                 src="/src/assets/g logos/phone.png"
                 alt=""
               />
+            </figure>
               <p className="mt-2">
                 {" "}
                 <span className="font-bold text-black mr-1">Phone : </span>
