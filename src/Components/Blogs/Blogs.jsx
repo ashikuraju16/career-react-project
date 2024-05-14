@@ -36,20 +36,21 @@ const Blogs = () => {
           <p>
             <span className="font-bold text-black text-xl max-sm:text-lg">
               {" "}
-              Percona Database Performance Blog:
+              InVision Blog:
             </span>{" "}
-            Percona is a leading provider of open-source database software and
-            services. Their blog covers a wide range of topics related to
-            database performance, optimization, and management.
+            InVision is a popular platform for digital product design and
+            collaboration. Their blog covers UX/UI design, product strategy, and
+            design thinking, with insights and tips from industry experts.
           </p>
           <p>
             <span className="font-bold text-black text-xl max-sm:text-lg">
               {" "}
               Planet PostgreSQL:
             </span>{" "}
-            This is an aggregator of blogs related to PostgreSQL, an open-source
-            relational database management system. It features articles,
-            tutorials, and news about PostgreSQL and related technologies.
+            Smashing Magazine: Smashing Magazine publishes articles on web
+            design, front-end development, and user experience. It includes
+            resources for designers at all levels, including senior
+            professionals.
           </p>
         </div>
       </div>
