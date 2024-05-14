@@ -14,7 +14,6 @@ const JobDetails = () => {
     saveJobApplication(idInt);
     Swal.fire({
       position: "top-center",
-
       icon: "success",
       title: "your application has been submitted",
       showConfirmButton: false,
