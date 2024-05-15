@@ -24,12 +24,12 @@ const JobDetails = () => {
   };
 
   return (
-    <div className="max-w-screen-2xl mx-auto h-[90]">
-      <h1 className="text-5xl text-black font-extrabold text-center pt-24 max-sm:pt-12">
+    <div className=" h-[90]">
+      <h1 className="text-5xl text-black font-extrabold text-center  pt-24 max-sm:pt-12">
         Job Details
       </h1>
-      <div className="grid max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-24 max-sm:py-12 text-xl leading-10 text-[#757575]">
-        <div className="col-span-2 px-8 max-sm:px-4 space-y-8  pb-8 ">
+      <div className="grid max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-24 px-12 lg:px-3 max-sm:py-12 text-xl leading-10 text-[#757575]">
+        <div className="col-span-2 lg:px-6 max-sm:px-4 px-8 space-y-8  pb-8 ">
           <h1>
             <span className="font-bold text-black">Job Description :</span>{" "}
             {currentJob?.job_description}
@@ -50,8 +50,8 @@ const JobDetails = () => {
             {currentJob?.experiences}
           </h4>
         </div>
-        <div className="max-sm:px-4 sm:px-8 sm:col-span-2 lg:col-span-1">
-          <div className="col-span-1 py-12 px-12 rounded-lg text-2xl lg:p-6  max-sm:text-xl max-sm:px-3 bg-[#f4f2ff]">
+        <div className="max-sm:px-4 sm:px-8 lg:px-4 sm:col-span-2 lg:col-span-1">
+          <div className="col-span-1 py-12 px-12 lg:px-5 rounded-lg text-2xl lg:text-xl xl:text-2xl  max-sm:text-xl max-sm:px-3 bg-[#f4f2ff]">
             <div className=" ">
               <h6 className="font-extrabold text-3xl text-black">
                 Job Details

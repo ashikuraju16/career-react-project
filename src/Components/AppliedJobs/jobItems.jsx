@@ -34,12 +34,12 @@ const JobItems = ({ job }) => {
               </div>
             </div>
             <div className="text-lg text-[#757575] lg:flex lg:space-x-4  ">
-              <div className="flex items-center">
-                <Icon className="mr-2 mt-0.5" icon="mi:location" />
+              <div className="flex items-center ">
+                <Icon className="mr-2 mt-0.5 mb-2" icon="mi:location" />
                 <div>{job.location}</div>
               </div>
               <div className="flex items-center">
-                <Icon className="mr-2 mt-0.5" icon="solar:dollar-outline" />
+                <Icon className="mr-2 mt-0.5 mb-2" icon="solar:dollar-outline" />
                 <div>{job.salary} (per month)</div>
               </div>
             </div>
