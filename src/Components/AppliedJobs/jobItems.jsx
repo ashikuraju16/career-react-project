@@ -13,7 +13,7 @@ const JobItems = ({ job }) => {
             <img className="  " src={job.logo} alt="" />
           </div>
           <div className="my-7 space-y-2">
-            <h1 className="text-2xl text-black font-extrabold">
+            <h1 className="text-2xl text-black font-extrabold text-start">
               {job.job_title}
             </h1>
             <p className="text-[#757575] text-xl text-start">
@@ -33,21 +33,23 @@ const JobItems = ({ job }) => {
               </div>
             </div>
             {/* location && salary */}
-            <div className="my-8 text-2xl text-[#757575]  lg:flex max-sm:flex-col  ">
+            <div className="my-8 text-lg text-[#757575]  lg:flex max-sm:flex-col  ">
               <div className="flex">
-                <Icon className=" mr-4 mt-0.5" icon="mi:location" />
+                <Icon className=" mr-2 mt-0.5" icon="mi:location" />
                 <div>{job.location}</div>
               </div>
               <div className="flex">
                 <Icon
-                  className="lg:ml-8 mr-4 mt-0.5 "
+                  className="lg:ml-8 mr-2 mt-0.5 "
                   icon="solar:dollar-outline"
                 />
-                <div>{job.salary}</div>
+                <div>{job.salary} (per month)</div>
               </div>
             </div>
           </div>
         </div>
+
+        {/* View Details */}
         <div>
           <NavLink>View Details</NavLink>
         </div>
