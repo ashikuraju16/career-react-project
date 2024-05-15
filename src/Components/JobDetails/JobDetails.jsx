@@ -1,4 +1,5 @@
-import  { useState } from "react";
+/* eslint-disable no-undef */
+import { useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 import { saveJobApplication } from "../LocalStore";
@@ -8,8 +9,11 @@ const JobDetails = () => {
   const { id } = useParams();
   const idInt = Number.parseInt(id);
   const currentJob = jobs.find((job) => job.id === idInt);
-  
+
   const [applied, setApplied] = useState(false);
+
+ 
+  
 
   const action = () => {
     saveJobApplication(idInt);
@@ -28,7 +32,7 @@ const JobDetails = () => {
       <h1 className="text-5xl text-black font-extrabold text-center  pt-24 max-sm:pt-12">
         Job Details
       </h1>
-      <div className="grid max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-24 px-12 lg:px-3 max-sm:py-12 text-xl leading-10 text-[#757575]">
+      <div className="grid max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-24  max-sm:px-2 lg:px-3 max-sm:py-12 text-xl leading-10 text-[#757575]">
         <div className="col-span-2 lg:px-6 max-sm:px-4 px-8 space-y-8  pb-8 ">
           <h1>
             <span className="font-bold text-black">Job Description :</span>{" "}
@@ -143,8 +147,12 @@ const JobDetails = () => {
             {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
             <button
               onClick={action}
-              className={`text-3xl w-full rounded-lg text-white font-extrabold ${applied ? "bg-red-700" : "bg-gradient-to-r from-[#818eff] from-10% via-[#8a82ff] via-30% to-[#9576ff] to-85%"} my-6 h-16`}
-              disabled={applied}
+              className={`text-3xl w-full rounded-lg text-white font-extrabold ${
+                applied
+                  ? "bg-red-700"
+                  : "bg-gradient-to-r from-[#818eff] from-10% via-[#8a82ff] via-30% to-[#9576ff] to-85%"
+              } my-6 h-16`}
+              disabled={!!applied}
             >
               {applied ? "Applied" : "Apply Now"}
             </button>
