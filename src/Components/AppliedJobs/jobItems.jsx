@@ -39,7 +39,10 @@ const JobItems = ({ job }) => {
                 <div>{job.location}</div>
               </div>
               <div className="flex items-center">
-                <Icon className="mr-2 mt-0.5 mb-2" icon="solar:dollar-outline" />
+                <Icon
+                  className="mr-2 mt-0.5 mb-2"
+                  icon="solar:dollar-outline"
+                />
                 <div>{job.salary} (per month)</div>
               </div>
             </div>
