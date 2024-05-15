@@ -1,9 +1,13 @@
+/* eslint-disable react/jsx-no-undef */
 /* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { NavLink } from "react-router-dom";
 
+
 const JobItems = ({ job }) => {
+   
+    
   return (
     <div className="mx-auto md:w-full lg:w-[85%] py-6">
       <div className="border-2 border-[#e8e8e8] m-4 p-8 md:p-5 max-sm:p-5 rounded-xl flex flex-col md:flex-row justify-between">
@@ -49,8 +53,11 @@ const JobItems = ({ job }) => {
           </div>
         </div>
 
-        {/* View Details */}
-        <NavLink className="lg:my-28 sm:my-16 my-6 w-full md:w-auto h-12 text-white p-4 flex justify-center items-center rounded-md font-extrabold text-lg bg-gradient-to-r from-[#818eff] via-[#8a82ff] to-[#9576ff]">
+
+        <NavLink
+          to="/jobs/:id" 
+          className="lg:my-28 sm:my-16 my-6 w-full md:w-auto h-12 text-white p-4 flex justify-center items-center rounded-md font-extrabold text-lg bg-gradient-to-r from-[#818eff] via-[#8a82ff] to-[#9576ff]"
+        >
           View Details
         </NavLink>
       </div>
