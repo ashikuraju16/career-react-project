@@ -36,14 +36,14 @@ const JobItems = ({ job }) => {
             <div className="my-8 text-2xl text-[#757575]  lg:flex max-sm:flex-col  ">
               <div className="flex">
                 <Icon className=" mr-4 mt-0.5" icon="mi:location" />
-                <div>{location}</div>
+                <div>{job.location}</div>
               </div>
               <div className="flex">
                 <Icon
                   className="lg:ml-8 mr-4 mt-0.5 "
                   icon="solar:dollar-outline"
                 />
-                <div>{salary}</div>
+                <div>{job.salary}</div>
               </div>
             </div>
           </div>
