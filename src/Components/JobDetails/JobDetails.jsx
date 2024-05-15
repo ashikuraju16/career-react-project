@@ -12,9 +12,6 @@ const JobDetails = () => {
 
   const [applied, setApplied] = useState(false);
 
- 
-  
-
   const action = () => {
     saveJobApplication(idInt);
     setApplied(true);
