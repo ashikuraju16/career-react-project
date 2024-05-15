@@ -25,17 +25,7 @@ const JobItems = ({ job }) => {
           <div className="px-4 py-1 rounded  bg-white ">{job.job_type}</div>
         </div>
       </div>
-        {/* location && salary */}
-        <div className="my-8 text-2xl text-[#757575]  lg:flex max-sm:flex-col  ">
-        <div className="flex">
-          <Icon className=" mr-4 mt-0.5" icon="mi:location" />
-          <div>{location}</div>
-        </div>
-        <div className="flex">
-          <Icon className="lg:ml-8 mr-4 mt-0.5 " icon="solar:dollar-outline" />
-          <div>{salary}</div>
-        </div>
-      </div>
+       
 
            
           </div>
