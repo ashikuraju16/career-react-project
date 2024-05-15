@@ -24,7 +24,7 @@ const JobItems = ({ job }) => {
                 {job.company_name}
               </p>
             </div>
-            <div className="flex flex-wrap space-x-2 text-lg  max-sm:text-xs sm:text-xs font-bold">
+            <div className="flex flex-wrap  space-x-2 text-lg  max-sm:text-xs sm:text-xs font-bold">
               <div className="rounded p-0.5 bg-gradient-to-r from-[#818eff] via-[#8a82ff] to-[#9576ff]">
                 <div className="px-4 py-1 sm:py-2 max-sm:py-2 rounded bg-white">
                   {job.remote_or_onsite}
