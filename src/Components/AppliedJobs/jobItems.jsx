@@ -50,9 +50,10 @@ const JobItems = ({ job }) => {
         </div>
 
         {/* View Details */}
-        <div>
-          <NavLink>View Details</NavLink>
-        </div>
+
+        <NavLink className="h-12 text-white p-4 flex items-center rounded-md font-extrabold text-lg my-20 bg-gradient-to-r from-[#818eff] from-10% via-[#8a82ff] via-35% to-[#9576ff] to-85%">
+          View Details
+        </NavLink>
       </div>
     </div>
   );
