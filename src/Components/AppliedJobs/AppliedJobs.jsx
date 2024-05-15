@@ -24,7 +24,7 @@ const AppliedJobs = () => {
     }
   }, [jobs]);
   return (
-    <div className="text-center text-4xl font-extrabold ">
+    <div className="text-center font-extrabold ">
       <ul>
         {displayedJobs.map((job) => (
           <JobItems key={job.id} job={job} />
