@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoredJobApplication } from "../LocalStore";
-import JobItems from "./job-items";
+import JobItems from "./jobItems";
 
 const AppliedJobs = () => {
   const jobs = useLoaderData();

@@ -38,9 +38,9 @@ const Footer = () => {
           <h6 className="footer-title  max-sm:text-xl max-sm:text-center text-3xl">
             Company
           </h6>
-          <NavLink className="text-base hover:bg-orange-700 text-white p-1 rounded-bl-3xl rounded-tr-3xl ">About us</NavLink>
-          <NavLink className="text-base  hover:bg-teal-700 text-white p-1 rounded-bl-3xl rounded-tr-3xl font-extrabold">Contact</NavLink>
-          <NavLink to="/job" className="text-base  hover:bg-indigo-700 text-white p-1 rounded-bl-3xl rounded-tr-3xl font-extrabold">Jobs</NavLink>
+          <NavLink className="text-lg hover:bg-orange-700 text-white p-1 rounded-bl-3xl rounded-tr-3xl ">About us</NavLink>
+          <NavLink className="text-lg  hover:bg-teal-700 text-white p-1 rounded-bl-3xl rounded-tr-3xl font-extrabold">Contact</NavLink>
+          <NavLink to="/job" className="text-lg  hover:bg-indigo-700 text-white p-1 rounded-bl-3xl rounded-tr-3xl font-extrabold">Jobs</NavLink>
         </nav>
       </div>
     </footer>
