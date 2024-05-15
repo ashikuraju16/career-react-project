@@ -5,9 +5,9 @@ import { NavLink } from "react-router-dom";
 
 const JobItems = ({ job }) => {
   return (
-    <div className="mx-auto max-md:w-full lg:w-[85%] py-6">
+    <div className="mx-auto md:w-full lg:w-[85%] py-6">
       <div className="border-2 border-[#e8e8e8] m-4 p-8 md:p-5 max-sm:p-5 rounded-xl flex flex-col md:flex-row justify-between">
-        <div className="flex flex-col md:flex-row space-y-6 md:space-y-8 md:space-x-12 ">
+        <div className="flex flex-col md:flex-row space-y-6 md:space-y-8 md:space-x-8 ">
           <div className="bg-[#f4f4f4] p-8 rounded-lg max-sm:p-6 md:p-4 lg:p-8  flex items-center justify-center">
             <img
               className="  h-20 max-w-52"
@@ -36,7 +36,7 @@ const JobItems = ({ job }) => {
                 </div>
               </div>
             </div>
-            <div className="text-lg text-[#757575]">
+            <div className="text-lg text-[#757575] lg:flex lg:space-x-4  ">
               <div className="flex items-center">
                 <Icon className="mr-2 mt-0.5" icon="mi:location" />
                 <div>{job.location}</div>
