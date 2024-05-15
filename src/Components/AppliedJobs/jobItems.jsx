@@ -10,14 +10,14 @@ const JobItems = ({ job }) => {
         <div className="flex flex-col md:flex-row space-y-6 md:space-y-8 md:space-x-12 ">
           <div className="bg-[#f4f4f4] p-8 rounded-lg max-sm:p-6 md:p-4 lg:p-8  flex items-center justify-center">
             <img
-              className="sm:h-28 max-sm:h-20 md:h-16 lg:h-24"
+              className="  h-20 max-w-52"
               src={job.logo}
               alt=""
             />
           </div>
           <div className=" flex flex-col  my-7 space-y-2 md:space-y-4">
             <div>
-              <h1 className="text-2xl text-black font-extrabold md:text-3xl text-start">
+              <h1 className="text-2xl text-black font-extrabold  text-start">
                 {job.job_title}
               </h1>
               <p className="text-[#757575] text-xl text-start">
