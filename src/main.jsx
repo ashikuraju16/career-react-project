@@ -12,40 +12,40 @@ import Blogs from "./Components/Blogs/Blogs";
 import AppliedJobs from "./Components/AppliedJobs/AppliedJobs";
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Layout />,
+	{
+		path: "/",
+		element: <Layout />,
 
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/applied",
-        loader: () => fetch("jobs.json"),
-        element: <AppliedJobs />,
-      },
-      {
-        path: "/jobs/:id",
-        loader: () => fetch("jobs.json"),
-        element: <JobDetails />,
-      },
-      {
-        path: "/job",
-        element: <FeaturedJobs />,
-      },
-      {
-        path: "/blogs",
-        element: <Blogs />,
-      },
-    ],
-  },
+		children: [
+			{
+				path: "/",
+				element: <Home />,
+			},
+			{
+				path: "/applied",
+				loader: () => fetch("jobs.json"),
+				element: <AppliedJobs />,
+			},
+			{
+				path: "/jobs/:id",
+				loader: () => fetch("jobs.json"),
+				element: <JobDetails />,
+			},
+			{
+				path: "/job",
+				element: <FeaturedJobs />,
+			},
+			{
+				path: "/blogs",
+				element: <Blogs />,
+			},
+		],
+	},
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-    <ResponsiveIndicator />
-  </React.StrictMode>
+	<React.StrictMode>
+		<RouterProvider router={router} />
+		<ResponsiveIndicator />
+	</React.StrictMode>,
 );
