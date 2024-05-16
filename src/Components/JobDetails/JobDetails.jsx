@@ -29,6 +29,7 @@ const JobDetails = () => {
 			<h1 className="text-5xl text-black font-extrabold text-center  pt-24 max-sm:pt-12">
 				Job Details
 			</h1>
+
 			<div className="grid max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-24  max-sm:px-2 lg:px-3 max-sm:py-12 text-xl leading-10 text-[#757575]">
 				<div className="col-span-2 lg:px-6 max-sm:px-4 px-8 space-y-8  pb-8 ">
 					<h1>
@@ -74,6 +75,7 @@ const JobDetails = () => {
 								</h6>
 
 								{/* job title */}
+
 								<h6 className="flex ">
 									<img
 										className=" h-8 mt-1 md:mt-2 mr-4"
